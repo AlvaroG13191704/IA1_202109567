@@ -42,7 +42,7 @@ function test(states) {
 
     if (traversedStates.length === 8) {
         return document.getElementById("log").innerHTML += `
-        <br>Todos los estados atravesados<br>
+        <br>TODOS LOS ESTADOS<br>
         <pre>${JSON.stringify(traversedStates, null, 2)}</pre>
         `;
     }
@@ -53,7 +53,7 @@ function test(states) {
 
     const action_result = reflex_agent(location, state);
 
-    document.getElementById("Salidas").innerHTML += `
+    document.getElementById("log").innerHTML += `
     <br>Estado: A: ${leftState} | B: ${rightState}
     <br>Ubicación: ${location} | Acción: ${action_result}<br>`;
 
